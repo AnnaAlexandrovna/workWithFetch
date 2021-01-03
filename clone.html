@@ -1,0 +1,15 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Request task</title>
+</head>
+<body>
+	<button  onclick = "modifyScreen()" >Ok</button>
+<script>
+	async function modifyScreen(){
+		let response = await fetch ("http://test1.ru/text.html");
+		document.body.innerHTML = await response.text() + "";
+	}
+</script>
+</body>
+</html>
